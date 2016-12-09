@@ -17,7 +17,7 @@ If this host will be part of a centrally configured mesh, edit the file
 >docker run -it bltierney/perfsonar-testpoint-docker /bin/bash
 
 After editing lsregistrationdaemon.conf, exit and commit the change.
-> docker commit -m "added lsregistrationdaemon config settings" containerID bltierney/perfsonar-tools
+> docker commit -m "added config settings" containerID bltierney/perfsonar-tools
 
 Run the container:
 >docker run -d -P --net=host -v /var/run bltierney/perfsonar-testpoint-docker
